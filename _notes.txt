@@ -1,0 +1,21 @@
+# 4. Setting Up A Virtual Environment
+Set-ExecutionPolicy Unrestricted - set this in PowerShell
+pip install virtualenv  - do this in PowerShell
+go to directory
+virtualenv .
+ls  - to see what files have been created
+./Scripts/activate
+
+# 5. Installing Django
+pip install django
+pip install django==[version]
+
+# 6. Starting A Project
+django-admin.py startproject [nameproject] # sometimes you have error with .py
+django-admin startproject [nameproject]
+go to [nameproject]
+python manage.py runserver
+
+# You have message after run server "You have 17 unapplied migration(s). "
+to fix that message
+python manage.py  migrate
